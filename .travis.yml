@@ -1,0 +1,25 @@
+language: node_js
+node_js: stable
+before_install:
+- git config --global user.name "sengmitnick"
+- git config --global user.email "sengmitnick@163.com"
+install:
+- npm install hexo -g
+- npm install
+script:
+- hexo clean
+- git clone ${GH_REF} public
+- cd ./public
+- rm -fr !(.git)
+- cd ../
+- hexo g
+after_script:
+- cd ./public
+- git add --all .
+- git commit -m "updata website"
+- git push -u origin master
+after_success:
+- hexo deploy
+branches:
+  only:
+  - blog-source

@@ -5,8 +5,4 @@ db.json
 node_modules/
 public/
 .deploy*/
-source/downloads/
-source/images/
-source/css/
-source/js/
 qn.json
