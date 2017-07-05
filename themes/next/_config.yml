@@ -22,6 +22,11 @@ authoricon: heart
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
 
+# 控制备案号的显示与设置备案号
+filing: false
+filing_number: 粤ICP备15007727号-1
+
+
 # ---------------------------------------------------------------
 # SEO Settings
 # ---------------------------------------------------------------

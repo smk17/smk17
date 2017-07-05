@@ -15,7 +15,7 @@ var cli = 'hexo server -p ' + port;
 console.log(cli);
 var qiniu = {
 	"access_key": process.env.AccessKey,
-  	"secret_key": process.env.SecretKey
+  "secret_key": process.env.SecretKey
 }
 var exec_qiniu = "echo '"+JSON.stringify(qiniu)+"' 1>qn.json "
 exec(exec_qiniu, (error, stdout, stderr) => {

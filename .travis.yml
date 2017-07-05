@@ -7,6 +7,7 @@ install:
 - npm install hexo -g
 - npm install
 script:
+- echo "{\"access_key\": ${QN_AK},\"secret_key\": ${QN_SK}}"
 - hexo clean
 - git clone ${GH_REF} public
 - cd ./public
@@ -18,8 +19,6 @@ after_script:
 - git add --all .
 - git commit -m "updata website"
 - git push -u origin master
-after_success:
-- hexo deploy
 branches:
   only:
   - blog-source

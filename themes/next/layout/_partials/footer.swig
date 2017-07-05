@@ -19,12 +19,15 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
+
+{% endif %}
+{% if theme.filing %}
 <br/>
 <div class="theme-info">
   <span class="author">备案号 </span>
   <span class="with-love">
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
-  <a  class="theme-link" href="http://www.miitbeian.gov.cn/">粤ICP备15007727号-1</a>
+  <a  class="theme-link" href="http://www.miitbeian.gov.cn/">{{ theme.filing_number }}</a>
 </div>
 {% endif %}
