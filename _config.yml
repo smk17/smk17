@@ -1,0 +1,146 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: SMK17的信箱
+subtitle: 记我所记
+description: 一个迷途的羔羊
+author: SengMitnick
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://smk17.cn
+root: /
+#permalink: :year/:month/:day/:title/
+permalink: :title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+auto_spacing: true
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: 技术
+category_map:
+  技术: technology
+  游戏: games
+  碎事: chores
+  作品: works
+tag_map:
+  置顶: sticky
+  服务器: server
+  系统: system
+  配置: configuration
+  优化: majorization
+  总结: summary
+  微信小程序: WeChatMiniProgram
+  多线程: multithread
+  环形缓冲区: RingBuffer
+  互斥锁: MutexLock
+  小游戏: games
+  启动页: SplashScreen
+  备份: backup
+  模板消息: notice
+  嵌入式: embedded
+  龙芯培训: loongson
+  编译内核: CompileKernel
+  Linux内核: LinuxKernel
+  Linux驱动: LinuxDrive
+  C语言: CPP
+  矢量化: vectorization
+  项目: project
+  走遍广州: TraveledToGuangzhou
+  聚会: get-together
+  编译: compile
+  离线: offline
+  破解: cracked
+  战网: battlenet
+  搭建环境: BuildTheEnvironment
+  数据恢复: DataRecovery
+  头文件: head-file
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+#添加搜索
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
+algolia:
+  applicationID: 'AFKBSFPD7A'
+  apiKey: 'd1c8c9020cbe2df31bf33979f57f5089'
+  adminApiKey: 'e1e2873365541d8b5730694f73d7a0e7'
+  indexName: 'prod_blog'
+  chunkSize: 5000
+
+# hexo-admin authentification
+admin:
+  username: smk17
+  password_hash: $2a$10$AmJP5g9l/GbcSdsETHUGHOOCE3ffcVoznpYut8RwfdyjW6VDrFGRW
+  secret: a secret something
+
+#七牛云存储设置
+qiniu:
+  offline: false
+  sync: true
+  bucket: 'smk17'
+  secret_file: qn.json
+  dirPrefix: static
+  urlPrefix: http://cdn.sengmitnick.com/static
+  up_host: http://up-z1.qiniu.com
+  local_dir: source
+  update_exist: true
+  image:
+    folder: images
+    extend:
+  js:
+    folder: js
+  css:
+    folder: css
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type:
