@@ -23,7 +23,7 @@ authoricon: heart
 copyright: true
 
 # 控制备案号的显示与设置备案号
-filing: false
+filing: true
 filing_number: 粤ICP备15007727号-1
 
 
