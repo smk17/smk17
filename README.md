@@ -1,5 +1,6 @@
 
 > 本博客是放在Hostker服务器的（国内访问GitHub的速度实在不敢恭维），Hostker的应用只支持git和ftp，而且他的git有点怪，每次都要clone然后再push上去才不会出现奇怪的东西，所以是用不了Hexo deploy了，所以想到 push 后通过 [travis-ci](https://travis-ci.org/) 来自动git到Hostker上面，接下来就开工了…
+
 [![Build Status](https://www.travis-ci.org/smk17/smk17.svg?branch=master)](https://www.travis-ci.org/smk17/smk17) [![smk17.cn](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-smk17-blue.svg)](http://smk17.cn/)
 <!--more-->
 #  Hostker
@@ -8,7 +9,7 @@
 
 ​	所以如果你是Hostker的老用户也可以接下去看...
 
-​	在 `我的应用列表` 新建应用，成功后如下：{% qnimg 99/1.png title:应用详细资料 alt:应用详细资料 %}
+​	在 `我的应用列表` 新建应用，成功后如下：![新建应用](http://cdn.sengmitnick.com/static/images/99/1.png)
 
 # Travis CI
 
