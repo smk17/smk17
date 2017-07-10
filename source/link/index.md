@@ -6,6 +6,7 @@ date: 2017-07-05 14:02:49
 {% note success %}
 **基友聚集地：**
 - [钢哥](http://www.cnblogs.com/hzijone)
+- [星空下的不眠人](http://zhiformonth.blog.163.com/)
 {% endnote %}
 
 {% note info %}

@@ -26,6 +26,10 @@ copyright: true
 filing: true
 filing_number: 粤ICP备15007727号-1
 
+# 又拍云免费政策需要广告
+ypyun: true
+ypyun_name: 本站使用在又拍云
+ypyun_img: http://cdn.sengmitnick.com/static/images/ypyun.png
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -50,11 +54,11 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
+  categories: /categories/
   #about: /about
-  archives: /archives
-  tags: /tags
-  link: /link
+  archives: /archives/
+  tags: /tags/
+  link: /link/
   #commonweal: /404.html
 
 

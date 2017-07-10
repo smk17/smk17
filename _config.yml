@@ -15,7 +15,7 @@ timezone:
 url: http://smk17.cn
 root: /
 #permalink: :year/:month/:day/:title/
-permalink: :title/
+permalink: posts/:title/
 permalink_defaults:
 
 # Directory
@@ -84,6 +84,7 @@ tag_map:
   搭建环境: BuildTheEnvironment
   数据恢复: DataRecovery
   头文件: head-file
+  阿里云: aliyun
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -110,8 +111,6 @@ theme: next
 #   limit: 10000
 algolia:
   applicationID: 'AFKBSFPD7A'
-  apiKey: 'd1c8c9020cbe2df31bf33979f57f5089'
-  adminApiKey: 'e1e2873365541d8b5730694f73d7a0e7'
   indexName: 'prod_blog'
   chunkSize: 5000
 
@@ -130,11 +129,10 @@ qiniu:
   dirPrefix: static
   urlPrefix: http://cdn.sengmitnick.com/static
   up_host: http://up-z1.qiniu.com
-  local_dir: source
-  update_exist: true
+  local_dir: static
+  update_exist: false
   image:
     folder: images
-    extend:
   js:
     folder: js
   css:
